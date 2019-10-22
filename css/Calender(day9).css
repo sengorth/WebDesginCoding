@@ -1,0 +1,52 @@
+table,td,th{
+    border:1px solid darkgray;
+    border-collapse: collapse;
+}
+td{
+    width: 150px;
+    height: 80px;
+    vertical-align: top;
+    text-align: left;
+}
+th{
+    width: 150px;
+    height: auto;
+}
+.blank{
+    background-color: pink;
+}
+th{
+    background-color: palevioletred;
+}
+.red{
+    background-color: rgba(179, 22, 22, 0.808);
+}
+.tcenter{
+    text-align: center;
+    padding-bottom: 25px;
+}
+table{
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.tred{
+    color: red;
+}
+img{
+    width: 150px;
+    height: 80px;
+}
+.bg1{
+    background-image: url("../html/khmer/HappyNewYear2018_GreetingCard_Cambodia.jpg");
+    background-size: 150px 80px;
+}
+.bg2{
+    background-image: url("../html/khmer/hqdefault.jpg");
+    background-size: 150px 80px;
+}
+.bg3{
+    background-image: url("../html/khmer/Khmer-New-Year-2018.jpg");
+    background-size: 150px 80px;
+}

@@ -1,0 +1,22 @@
+table,td,th{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+td{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+th{
+    height: 50px;
+}
+img{
+    width: 99px;
+    height: 99px;
+}
+h1{
+    text-align: center;
+}

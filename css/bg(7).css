@@ -1,0 +1,23 @@
+
+.Jumbotron{
+    background-image: url("../html/763d605a521901578244e6f50e473de6.jpg");
+    margin: auto;
+    /* background-size: contain; */
+    background-size: 1200px 370px;
+    background-repeat: no-repeat;
+    width: 70%;
+    border: 2px solid black;
+
+}
+.white{
+    color: black;
+    padding-top: 5%;
+    padding-left: 20px;
+    text-align: center;
+}
+.btn{
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    margin: 5%;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #demo, .test{
+        color: blue;
+        background-color: chocolate;
+        text-align: center;
+    }
+    body{
+        background-color: dodgerblue;
+    }
+    a[target="_blank"]{
+        background-color: red;
+    }
+    /* a{
+        background-color: red;
+    } */
+    /* a[target]{
+        background-color: red;
+    } */
+    [title~=flower]{
+        background-color: orange;
+    }
+    [title|=flower]{
+        background-color: orange;
+    }
+    input[type="text"]{
+        width: 50%;
+        margin: 5px;
+        height: 20px;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1 id="demo">Welcome to CSS Lesson</h1>
+
+    <h1 class="test">Welcome to Selector</h1>
+
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <a href="#" target="_blank">Home</a>
+    <h1 title="flower">Hello title flower</h1>
+    <h1 title="flower-cat">Hello title flower</h1>
+    <h1 title="flowercat">Hello title flower</h1>
+</body>
+</html>
