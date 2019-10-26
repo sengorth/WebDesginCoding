@@ -1,0 +1,34 @@
+body{
+    background-color:rgb(229, 229, 245);
+}
+ul{
+    background-color: rgb(238, 34, 34);   
+    overflow: hidden;
+    margin: 0px;
+    padding-left: 200px;
+   
+}
+li{
+    list-style-type: none; 
+    float: left;
+    margin: 10px;
+   
+    
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+a:hover{
+    color: black;
+}
+
+#floatright{
+    float: right;
+}
+.floatleft{
+    float: left;
+}
