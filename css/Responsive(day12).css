@@ -1,0 +1,107 @@
+.container{
+    width: 1200px;
+}
+.box{
+    box-sizing: border-box;
+    width: 190px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid;
+    background-color:blue;
+    float: left;
+
+}
+/* // Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px){ 
+    .container{
+        width: 576px;
+    }
+    .box{
+        box-sizing: border-box;
+        width: 566px;
+        height: 100px;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid;
+        background-color:black;
+        float: left;
+    
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {  
+    .container{
+        width: 576px;
+    }
+    .box{
+        box-sizing: border-box;
+        width: 182px;
+        height: 100px;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid;
+        background-color:red;
+        float: left;
+    
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .container{
+        width: 768px;
+    }
+    .box{
+        box-sizing: border-box;
+        width: 118px;
+        height: 100px;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid;
+        background-color:gray;
+        float: left;
+    
+    } 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .container{
+        width: 992px;
+    }
+    .box{
+        box-sizing: border-box;
+        width: 155px;
+        height: 100px;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid;
+        background-color:red;
+        float: left;
+    
+    }
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+.container{
+    width: 1200px;
+}
+.box{
+    box-sizing: border-box;
+    width: 190px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: purple;
+    float: left;
+
+}
+}

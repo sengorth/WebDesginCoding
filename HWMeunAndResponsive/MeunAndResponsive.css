@@ -1,0 +1,335 @@
+.fullcontain{
+    width: 1364px; 
+}
+.containfood{
+    width: 1364px; 
+   
+     
+}
+.boxfd{
+    box-sizing: border-box;
+    width: 438px;
+    height: 200px;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid;
+    float: left;
+}
+.containfood1{
+    width: 1364px;  
+}
+.boxfd1{
+    box-sizing: border-box;
+    width: 659px;
+    height: 300px;
+    margin: 11px;
+    padding: 10px;
+    border: 1px solid;
+    float: left;
+}
+ul{
+    background-color: red;
+    overflow: hidden;
+    margin: 0px;
+    padding: 20px;
+    
+}
+li{
+   list-style-type: none;
+   float: left;
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+a:hover{
+    color: dodgerblue;
+}
+.picture{
+    margin-top: 20px;
+    width: 1364px;
+    height: 200px;
+    border: 1px solid;
+}
+
+#Food{
+
+    width: 80px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 22px;
+
+}   
+
+#hr1{
+    width: 1364px;
+    height: 2px;
+    background-color: red;
+}
+#hr2{
+    width: 1364px;
+    height: 2px;
+    background-color: red;
+}
+#clothes{
+    width: 80px;
+    background-color: red;
+    color: white;
+    float: right;
+    text-align: center;
+    position: relative;
+    top: 22px;
+}
+.footer{
+    background-color: red;
+    margin-top: 350px;
+    width: 1362px;
+    height: 80px;
+    border: 1px solid;
+}
+button{
+    position: relative;
+    top: 15px;
+    width: 100px;
+    height: 50px; 
+}
+#btnMid{
+    margin-left: 530px;
+}
+#btnright{
+    float: right;
+}
+@media screen and (min-width: 1364px){
+    .fullcontain{
+        width: 1344px; 
+    }
+    .containfood{
+        width:1284px;
+    }
+    .boxfd{
+        box-sizing: border-box;
+        width: 400px;
+        height: 200px;
+        margin-left: 37px;
+        padding: 10px;
+        border: 1px solid;
+        float: left;
+    }
+    .containfood1{
+        width: 1284px; 
+    }
+    .boxfd1{
+        box-sizing: border-box;
+        width: 620px;
+        height: 300px;
+        margin-left: 37px;
+        padding: 10px;
+        border: 1px solid;
+        float: left;
+    }
+    ul{
+        background-color: red;
+        overflow: hidden;
+        margin-left: 40px;
+        margin-right: 20px;
+        padding: 20px;
+        
+    }
+    li{
+       list-style-type: none;
+       float: left;
+    }
+    a{
+        text-decoration: none;
+        padding: 20px;
+        color: white;
+    }
+    a:hover{
+        color: dodgerblue;
+    }
+    .picture{
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 1284px;
+        height: 200px;
+        border: 1px solid;
+    }
+    
+    #Food{
+    
+        width: 80px;
+        background-color: red;
+        margin-left: 38px;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 22px;
+    
+    }   
+    
+    #hr1{
+        width: 1288px;
+        height: 2px;
+        margin-left: 38px;
+        background-color: red;
+    }
+    #hr2{
+        width: 1288px;
+        height: 2px;
+        margin-left: 38px;
+        background-color: red;
+    }
+    #clothes{
+        width: 80px;
+        background-color: red;
+        color: white;
+        margin-right: 17px;
+        float: right;
+        text-align: center;
+        position: relative;
+        top: 22px;
+    }
+    .footer{
+        background-color: red;
+        margin-left: 35px;
+        width: 1287px;
+        height: 80px;
+        border: 1px solid;
+    }
+    button{
+        position: relative;
+        top: 15px;
+        width: 100px;
+        height: 50px; 
+    }
+    #btnleft{
+        float: left;
+        margin-left:20px ;
+    }
+    #btnMid{
+        margin-left: 479px;
+        
+    }
+    #btnright{
+        float: right;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 768px ){
+    .fullcontain{
+        width: 748px; 
+    }
+    .containfood{
+        width: 748px; 
+       
+         
+    }
+    .boxfd{
+        box-sizing: border-box;
+        width: 719px;
+        height: 200px;
+        margin: 8px;
+        padding: 10px;
+        border: 1px solid;
+        float: left;
+    }
+    .containfood1{
+        width: 748px;  
+    }
+    .boxfd1{
+        box-sizing: border-box;
+        width: 719px;
+        height: 300px;
+        margin: 8px;
+        padding: 10px;
+        border: 1px solid;
+        float: left;
+    }
+    ul{
+        background-color: red;
+        overflow: hidden;
+        margin-right: 20px;
+        margin-left: 10px;
+        padding: 20px;
+        
+    }
+    li{
+       list-style-type: none;
+       float: left;
+    }
+    a{
+        text-decoration: none;
+        padding: 20px;
+        color: white;
+    }
+    a:hover{
+        color: dodgerblue;
+    }
+    .picture{
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 10px;
+        width: 715px;
+        height: 200px;
+        border: 1px solid;
+    }
+    #Food{
+        width: 80px;
+        margin-left: 10px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 22px;
+    }   
+    #hr1{
+        margin-left: 10px;
+        width: 715px;
+        height: 2px;
+        background-color: red;
+    }
+    #hr2{
+        margin-left: 9px;
+        width: 718px;
+        height: 2px;
+        background-color: red;
+    }
+    #clothes{
+        margin-right: 20px;
+        width: 80px;
+        background-color: red;
+        color: white;
+        float: right;
+        text-align: center;
+        position: relative;
+        top: 23px;
+    }
+    .footer{
+        background-color: red;
+        margin-top: 650px;
+        margin-left: 7px;
+        width: 718px;
+        height: 80px;
+        border: 1px solid;
+    }
+    button{
+        position: relative;
+        top: 15px;
+        width: 100px;
+        height: 50px; 
+    }
+    #btnleft{
+        float: left;
+        margin-left:20px ;
+    }
+    #btnMid{
+        margin-left: 180px;
+    }
+    #btnright{
+        float: right; 
+        margin-right: 20px;
+    }
+}

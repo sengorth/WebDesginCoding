@@ -32,3 +32,21 @@ a:hover{
 .floatleft{
     float: left;
 }
+.side{
+    
+    width: 215px;
+
+    
+}
+div{
+   
+    width: 1500px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+}
+.content{
+    border:1px solid;
+    width: 850px;
+    height: auto;
+}
