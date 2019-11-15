@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+    flex-wrap: wrap;
+}
+.videoyoutube{
+    display: flex;
+    justify-content: center;
+    }
+.Meun{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boxMeun{
+    box-sizing: border-box;
+    background-color: crimson;
+    color: white;
+    height: 50px;
+    width: 35%;
+    display: flex;
+    padding: 10px;
+    margin: 0.3%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+}
+.boxdetail{
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+    border: 1px solid;
+    background-color: cornflowerblue;
+}
+.boxdetail1{
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+    border: 1px solid;
+    background-color: cornflowerblue;
+}
+.description{
+    padding: 10px;}
+.charater{
+    margin: 10px;
+}
+/* @media screen and (max-width:768px){
+    .container1{
+        display: flex;
+        flex-flow: column;
+    }
+    .boxMeun{
+        width: 460px;
+        border: 1px solid;
+        text-align: center;
+        background-color: red;
+    }
+    .or{
+        order: -1;
+    }
+    .container2{
+        display: flex;
+    }
+    .boxdetail{
+        width: 460px;
+        height: 680px;
+        border: 1px solid;
+        background-color: cornflowerblue;
+    }
+    .boxdetail{
+        display: flex;
+        width: 460px;
+        height: 680px;
+        border: 1px solid;
+        background-color: cornflowerblue;
+    }
+} */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+.column-container {
+    display: flex;
+
+    justify-content: center;
+    
+}
+.column {
+    box-sizing: border-box;
+    width: 35%;
+    margin: 0.3%;
+    background-color: white;
+}
+.head-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head {
+    box-sizing: border-box;
+    background-color: crimson;
+    color: white;
+    height: 50px;
+    width: 35%;
+    display: flex;
+    padding: 10px;
+    margin: 0.3%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
