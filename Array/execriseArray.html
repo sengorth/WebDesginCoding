@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="First_name" placeholder="FirstName" id="name1">
+    <input type="Last_name" placeholder="LastName" id="name2">
+    <button id="result">Click</button>
+    <div class="container" id="ctn">
+
+    </div>
+    <script>
+        //get value from input
+
+        let fn = document.getElementById('name1')
+        let ln = document.getElementById('name2')
+        let btn = document.getElementById('result')
+        let container = document.getElementById('ctn')
+        let data = new Array()
+        let content = "";
+
+        //handle wjen user click btn submit
+        btn.onclick = function () {
+            //put value to object
+            let p = new Person(fn.value, ln.value)
+            //put  to array
+            data.push(p)
+
+            //loop to show on brower
+            for (info of data) {
+                content +=
+                `
+                <div class="box">
+                <h1>${info.name1}</h1>
+                <h1>${info.name2}</h1>
+                </div>
+                `
+            }
+            container.innerHTML = content
+            content = ""
+
+        }
+        function Person(name1, name2) {
+            this.name1 = name1
+            this.name2 = name2
+        }
+    </script>
+</body>
+
+</html>

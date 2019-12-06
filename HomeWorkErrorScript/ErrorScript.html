@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Register Form</legend>
+        <input type="text"  id="usr"  placeholder="UserName">
+        <br>
+        <input type="text"  id="pwd"  placeholder="Password">
+        <lable id="msg"></lable><br>
+        <button id="btn">Log In</button>
+    </fieldset>
+   
+    <script>
+        let usr = document.getElementById('usr');
+        let pwd = document.getElementById('pwd');
+        let msg = document.getElementById('msg');
+        let bnt = document.getElementById('btn');
+        let colorText;
+        btn.onclick = function () {
+            try {
+                if(usr.value == "" && pwd.value == ""){
+                    colorText = true
+                    throw  'Empty!!! Please Fill The Box'
+                }
+                if(usr.value == "" || !isNaN(usr.value) || usr.value.length < 10 ){
+                    colorText = true
+                    throw 'Username is incorrent'
+                }
+                if(pwd.value == "" || pwd.value.length < 5){
+                    colorText = true
+                    throw 'Password incorrect'
+                }
+                else{
+                    colorText = false
+                    throw 'Log In Success';
+                }
+            }catch (error) {
+                if (colorText == true) {
+                    msg.innerHTML = error
+                    msg.style.color = "red"
+                }else {
+                    msg.innerHTML = error
+                    msg.style.color = "blue"
+                }
+            }
+        }
+    </script>
+</body>
+</html>

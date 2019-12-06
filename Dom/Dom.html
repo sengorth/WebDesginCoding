@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .c{
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Hello I</h1>
+    <h1 class="demo1">Hello ID</h1>
+    <h1 class="demo1">Hello ID</h1>
+    <h1 class="demo1">Hello ID</h1>
+    <h1 class="demo1">Hello ID</h1>
+    <button onclick="findClass()">Click</button>
+    <button onclick="findTagName()">ClickName</button>
+    <button onclick="findQuerySelector()">ClickColor</button>
+    <script>
+    //find html element in javascript
+    //find by class
+    function findClass(){
+        let room=document.getElementsByClassName('demo1')
+        console.log(room.length)
+        for(i=0;i<room.length;i++)
+        room[i].innerHTML = 'New Room'
+    }
+    function findTagName(){
+        let room=document.getElementsByTagName('h1');
+        console.log(room)
+        room[0].innerHTML="New ID Bro 😂"
+    }
+    function findQuerySelector(){
+        let room=document.querySelectorAll('h1')
+        room[0].setAttribute('align','center')
+        room[0].setAttribute('class','c')
+    }
+    </script>
+</body>
+</html>

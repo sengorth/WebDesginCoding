@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .para {
+            font-size: 50px;
+            font-weight: bold;
+            font-variant: small-caps;
+            color: blue;
+            text-align: center;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>last paragraph</p>
+    </div>
+    <button onclick="testNode()">Test Node</button>
+
+    <input type="text" name="" id="urs">
+    <button id="btn"> Click</button>
+    <div class="container">
+
+    </div>
+    <script>
+        let div = document.querySelector('div')
+        function testNode() {
+            let p1 = div.firstElementChild
+            // p1.style.color ='red'
+            p1.setAttribute('class', 'para')
+            let p2 = div.lastElementChild
+            p2.setAttribute('class', 'para')
+            let childDiv = div.childNodes[3]
+            childDiv.setAttribute('class', 'para')
+            console.log(p1)
+            console.log(p2)
+            console.log(childDiv)
+        }
+
+
+        let btn = document.getElementById('btn')
+        let usr = document.getElementById('urs')
+        let c = document.querySelector('.container')
+        btn.addEventListener('click', addCard)
+        function addCard() {
+            let item = document.createElement('div')
+            item.setAttribute('class', 'box')
+            item.setAttribute('onclick', 'fire(this)')
+            let text = document.createTextNode(usr.value)
+            item.appendChild(text)
+            c.appendChild(item)
+        }
+        // function removeCard(Card) {
+        //     c.removeChild(Card)
+
+        // }
+        
+        function fire(Card){
+            Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.value) {
+                Swal.fire(
+                    c.removeChild(Card),
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        })
+        }
+        
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+</html>

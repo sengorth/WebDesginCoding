@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="usr">
+    <button id="btn">Click</button>
+    <p id="msg"></p>
+
+    <script>
+        let usr = document.getElementById('usr');
+        let b = document.getElementById('btn');
+        let result=document.getElementById('msg')
+        b.onclick = function () {
+            valiateRegex(usr.value)
+            
+        }
+        let valiateRegex = (userInput) => {
+            let patt = /[^a-z \s]/gi;
+            // let pattword=/\w/gi;
+            if (userInput.match(patt) == null) {
+                result.innerHTML= `user input school`
+            } else {
+                result.innerHTML=` user input not school`
+            }
+
+            // if(pattword.test(userInput)){
+            //     console.log(`user input non _word`)
+            // }else{
+            //     console.log(`user input word`)
+            // }
+        }
+
+    </script>
+</body>
+
+</html>

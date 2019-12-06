@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="num" placeholder="Write Your Number">
+    <p id="res"></p>
+    <button id="st">start</button>
+    <button id="restart">Restart</button>
+    <script>
+        let result = document.getElementById(`res`)
+        let rt = document.getElementById(`restart`)
+        let start = document.getElementById(`st`)
+        let win = document.getElementById(`num`)
+        let Pi = Math.PI
+        restart.onclick = function () {
+            result.innerHTML = "0";
+    
+        }
+        start.onclick = function () {
+            result.innerHTML = Math.floor(Math.random() * 10)
+            if (result == win ){
+                 result.innerHTML=`You Win $10000`
+            } else {
+                 result.innerHTML=`You lose,Please Try Again`
+            }
+        }
+        
+        
+
+        // result=Math.ceil(Pi)
+        // result = Math.random(pi)
+        
+
+
+    </script>
+</body>
+
+</html>

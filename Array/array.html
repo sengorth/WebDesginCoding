@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.regular
+        let animal = new Array()
+        animal[0] = 'cow'
+        animal[1] = 'dog'
+        animal[2] = 'wolf'
+        animal[3] ='cat'
+        Array.prototype.toUppercaseString = function () {
+            for (let i = 0; i < this.length; i++) {
+            this[i] = this[i].toUpperCase();
+            }
+        }
+        animal.toUppercaseString()
+        //console.log(animal)
+        //2.condensed
+        let person=new Array('dara', 'daro' ,'thea','tree')
+        person.toUppercaseString()
+        //console.log(person)
+        //3. literal
+        let array=['arr1',20]
+        //method and properties
+        //concat:join two array
+        let newArr = person.concat(animal,array,['123', '122'])
+        let removeElement=newArr.pop();
+        console.log(newArr)
+        console.log(removeElement)
+
+        //join
+        // let newString=person.join(animal)
+        // console.log(newString)
+        //add element back
+        newArr.push('New Element')
+        console.log(newArr)
+        //add element front
+        newArr.unshift('qwer')
+        console.log(newArr)
+        document.write(newArr)
+    </script>
+</body>
+
+</html>
