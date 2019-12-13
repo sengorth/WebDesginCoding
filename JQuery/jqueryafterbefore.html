@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .img{
+            width: 100px;
+            height: 100px;
+            margin:auto;
+            display: block;
+        }
+        .textstyle{
+            color: blue;
+            font-size: 100px;
+            text-align: center;
+        }
+        .highlight{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <img src="../html/Angkor_Wat_in_Flag_of_Cambodia.svg.png" alt="" id="o2">
+    <p>Hello</p>
+    <h1>Welcome</h1>
+    <h2>Home</h2>
+    <button>Click</button>
+    <!-- <img src="../html/7b6846c3aebb3cc1b4e6d8915bdd2c8e.png" alt="" id="o1"> -->
+    
+  <script src="jquery-3.4.1.min.js"></script>
+<script>
+    $('button').click(function(){
+        $('p').toggleClass('textstyle highlight')
+        $('img').addClass('img highlight')
+        $('h1').addClass('highlight textstyle')
+        $('h2').css({'color':'blue','font-size':'50px','text-align':'center','background-color':'yellow'})
+        
+    })
+//     $(function(){
+//         afterText();
+//         appendText();
+//         beforeText();
+//     })
+//   function afterText() {
+//     var txt1="<b> I </b>";               		// Create element with HTML 
+//     var txt2=$("<i></i>").text("LOVE");   		// Create with jQuery
+//     var txt3=document.createElement("big");  	// Create with DOM
+//     txt3.innerHTML="jquery!";
+//     $("#o2").after(txt1,txt2,txt3);        		 // Append the new elements
+//     }
+//     function beforeText() {
+//     var txt1="<b> I </b>";               		// Create element with HTML 
+//     var txt2=$("<i></i>").text("LOVE");   		// Create with jQuery
+//     var txt3=document.createElement("Small");  	// Create with DOM
+//     txt3.innerHTML="jquery";
+//     $("#o1").before(txt1,txt2,txt3);        		 // Append the new elements
+//     }
+//     function appendText() {
+//     var txt1="<p>Text.</p>";               		// Create element with HTML 
+//     var txt2=$("<p></p>").text("Text.");   		// Create with jQuery
+//     var txt3=document.createElement("p");  	    // Create with DOM
+//     txt3.innerHTML="Text.";
+//     $("p").append(txt1,txt2,txt3);        		 // Append the new elements
+//     }
+</script>  
+</body>
+</html>

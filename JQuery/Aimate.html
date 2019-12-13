@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #box{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+        1
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    $(function(){
+        // $('#box').animate({
+        //     right:0
+        // }, 2000,function(){
+        //     $(this).animate({
+        //         bottom:0
+        //     }, 2000,function(){
+        //         $(this).animate({
+        //             left:0
+        //         }, 2000,function(){
+        //             $(this).animate({
+        //                 top:0
+        //             })
+        //         })
+        //     })
+        // })
+        //other style
+        // let div = $('#box')
+        // div.animate({
+        //     right:0
+        // },2000)
+        // .animate({
+        //     bottom:0
+        // },2000)
+        // .animate({
+        //     left:0
+        // },2000)
+        // .animate({
+        //     top:0
+        // },2000)
+        // .animate({
+        //     left:500,
+        //     top:350
+        // },2000)
+        // .fadeOut(2000)
+        // .fadeIn(2000)
+        // .animate({
+        //     width:'+=150',
+        //     height:'+=150'
+        // })
+        //box1()
+        console.log($(window).width())
+        console.log($(window).height())
+    })
+    function box1(){
+        let div = $('#box')
+        div.animate({left:1430})
+        .animate({top:635})
+        .animate({left:0})
+        .animate({top:0},100,function(){
+            box1()
+        })
+    }
+    </script>
+
+    
+</body>
+</html>

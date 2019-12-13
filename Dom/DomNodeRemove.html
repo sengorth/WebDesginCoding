@@ -87,9 +87,9 @@
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
-            if (result.value) {
+            if (result.value) { c.removeChild(Card)
                 Swal.fire(
-                    c.removeChild(Card),
+                   
                     'Deleted!',
                     'Your file has been deleted.',
                     'success'
